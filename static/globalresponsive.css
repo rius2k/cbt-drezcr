@@ -1,0 +1,17 @@
+@media (max-width: 48rem) {
+    .only-responsive{display: inherit;}
+    .no-responsive{display: none;}
+
+    header{
+        padding: 3% 6%;
+        background-color: var(--mobileHeaderBgColor);
+    }
+
+    header div #icon{
+        width: 15%;
+    }
+
+    header div #icon #icon{
+        width: 100%;
+    }
+}

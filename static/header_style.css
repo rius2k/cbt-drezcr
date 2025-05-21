@@ -1,0 +1,82 @@
+:root {
+      --primario: #121768;
+      --secundario: #3da772;
+      --terciario: #2e6f47;
+      --fondo: #bebebe;
+      --bacground2:rgb(81, 102, 221);
+      --background_color: rgb(135, 152, 155);
+      --white:rgb(250,250,250);
+      --blue:rgb(29, 34, 105);
+      --aquamarine:rgb(24, 141, 83);
+      --gold:rgb(139, 137, 16);
+      --green:rgb(29, 95, 23);
+      --blue_grey: rgba(97, 92, 158, 0.836);
+      --blue_grey2: rgba(70, 65, 128, 0.836);
+      --blue_grey3:rgba(51, 46, 97, 0.836);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background_color);
+    font-family: "Raleway", sans-serif;
+}
+
+button {
+    background-color: var(--terciario);
+    color: white;
+    font-size: 1rem;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--secundario);
+    transform: scale(1.05);
+}
+
+.menu{
+     background: linear-gradient(to right, #121668ad,#3da772ad);
+     width: 500 px;
+     height: 50px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: self-start;
+     display: flex; 
+     align-items: center;
+}
+
+.header_style{
+    background: url(Escuela\ background.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header_style img{
+    width: 80px; 
+    height: 80px;
+}
+
+.header_style h1 {
+    color: white;
+    font-family: "Ancizar Serif", serif; 
+    font-size: 2rem;
+    margin-left: 10px;
+    text-shadow: 0 1px #b7b7b7, 0 2px 
+    #b7b7b7, 0 3px #b7b7b7, 0 4px #b7b7b7, 0 5px #b7b7b7, 0 6px transparent, 0 7px transparent,
+    0 8px transparent, 0 9px transparent, 0 10px 10px rgba(0,0,0.5)
+}
+

@@ -1,0 +1,20 @@
+{
+    "host": "127.0.0.1",
+    "port": 5000,
+    "endpoint-map": {
+        "carreras": ["applications.carreras.bp", "carreras.index"],
+        "nosotros": ["applications.nosotros.bp", "nosotros.index"],
+        "revista": ["applications.revista.bp", "revista.index"],
+        "solesmetepec": ["applications.solesmetepec.bp", "solesmetepec.index"],
+        "directorio": ["applications.directorio.bp", "directorio.index"],
+        "convocatoria": ["applications.convocatoria.bp", "convocatoria.index"]
+    },
+    "site-description": {
+        "author": "Centro de Bachillerato Tecnológico Dr. Ezequiel Capistrán Rodríguez",
+        "url": "https://cbtdrezequielcapistranrodriguez.com",
+        "socialmedia-preview": "/static/socialmedia-preview.png",
+        "description": "Somos una institución de Bachillerato Tecnológico con especialidades en Informática, Contabilidad, Diseño Asistido por Computadora y Administración. Preparamos a nuestros alumnos para el campo laboral mediante formación en competencias generales y bases prácticas de su carrera técnica.",
+        "after-pagetitle": "CBT Dr. Ezequiel Capistrán Rodríguez - Metepec",
+        "favicon": "/static/favicon-96x96.png"
+    }
+}
