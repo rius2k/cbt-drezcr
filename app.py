@@ -12,7 +12,8 @@ def index():
         PageTitle=SetPageTitle(f'Inicio ~ {app_config['site-description']['after-pagetitle']}'),
         PageDescription=SetPageDescription(app_config["site-description"]["description"]),
         JsFX=SetJSInit(),
-        PageHeader=SetPageHeader()
+        PageHeader=SetPageHeader(),
+        PageFooter=SetPageFooter()
     )
 
 """@app.route('/getTheme', methods=["POST"])

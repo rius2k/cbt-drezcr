@@ -35,3 +35,6 @@ def SetPageHeader():
         els += el
     content = content.replace("<!--NAVITEMS-->", els)
     return str(content)
+def SetPageFooter():
+    with open('templates/footer.html', 'r') as htmlfooter:content=htmlfooter.read()
+    return str(content)

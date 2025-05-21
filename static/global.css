@@ -6,8 +6,10 @@ a{text-decoration: none;color: inherit;}
 }
 
 [data-theme="light"]{
-    --bgColor: rgb(201, 236, 207);
+        --bgColor: rgb(201, 236, 207);
     --mobileHeaderBgColor: rgba(65, 100, 70, 0.425);
+    --footerBgColor: rgb(37, 37, 37);
+    --footerTextColor: rgb(218, 218, 218);
 }
 
 [data-theme="dark"]{
@@ -50,4 +52,42 @@ header div #hamburguer div div{width: 100%;height: 100%;border: none;}
     outline: none;
     background-color: transparent;
     font-size: 80%;
+}
+
+footer {
+    width: 100%;
+    height: 10%;
+    background-color: var(--footerBgColor);
+    color: var(--footerTextColor);
+    padding: 1% 2%;
+}
+
+footer div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+footer div #author {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div nav {
+    width: 13%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div nav div {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

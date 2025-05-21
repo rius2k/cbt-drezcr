@@ -14,4 +14,17 @@
     header div #icon #icon{
         width: 100%;
     }
+
+    footer {
+        height: 8%;
+        padding: 3.9% 3%;
+    }
+
+    footer div #author {
+        width: 40%;
+    }
+
+    footer div nav {
+        width: 35%;
+    }
 }
