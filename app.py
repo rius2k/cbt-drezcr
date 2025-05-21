@@ -13,7 +13,8 @@ def index():
         PageDescription=SetPageDescription(app_config["site-description"]["description"]),
         JsFX=SetJSInit(),
         PageHeader=SetPageHeader(),
-        PageFooter=SetPageFooter()
+        PageFooter=SetPageFooter(),
+        PageContentTitle=SetPageContentTitle('Inicio')
     )
 
 """@app.route('/getTheme', methods=["POST"])
@@ -32,4 +33,4 @@ def SetTheme(data):
 
 if __name__:
     mapApplications(app)
-    app.run(debug=True, host='127.0.0.1', port=5000) 
+    app.run(debug=True, host=app_config['host'], port=app_config['port']) 

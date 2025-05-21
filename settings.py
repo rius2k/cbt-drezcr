@@ -17,7 +17,15 @@ def mapApplications(app):
 
 def loadAppConfig():
     with open('config.json', 'r') as jsonfile:return json.load(jsonfile)
-def loadDefaultCSS():return """<link rel="stylesheet" href="/static/global.css"><link rel="stylesheet" href="/static/globalresponsive.css"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="/static/favicon.png" type="image/x-png">"""
+def loadDefaultCSS():return """
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/global.css">
+<link rel="stylesheet" href="/static/globalresponsive.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/static/favicon.png" type="image/x-png">"""
 def SetPageTitle(v):return f"<title>{v}</title>"
 def SetPageDescription(v): return f"<meta name='description' content='{v}'/>"
 def loadDefaultMetatags():
@@ -31,10 +39,14 @@ def SetPageHeader():
     #aquí quiero cargar un diccionario, por ejemplo de apartados, hacer el for del diccionario y añadirlos al htmlcontent
     cfx, els = loadAppConfig(), ""
     for key in cfx['endpoint-map']:
-        el = f'<a href="/{key}"><button>{key.capitalize()}</button></a>'
+        if key == 'solesmetepec':el = f'<a href="/{key}"><button>Soles de Metepec</button></a>'
+        else:
+            el = f'<a href="/{key}"><button>{key.capitalize()}</button></a>'
         els += el
     content = content.replace("<!--NAVITEMS-->", els)
     return str(content)
 def SetPageFooter():
     with open('templates/footer.html', 'r') as htmlfooter:content=htmlfooter.read()
     return str(content)
+def SetPageContentTitle(v):
+    return f"""<div id="title"><label class="h1">{v}</label></div>"""

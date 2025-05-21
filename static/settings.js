@@ -27,14 +27,15 @@ function setAndDefineTheme() {
     }
 }
 
-toogleNavStat = false
-            nav = document.getElementById('responsive-nav')
-            function toogleNav(){
-                if(!toogleNavStat){
-                    nav.style.display = 'inherit'
-                    toogleNavStat = true
-                }else{
-                    nav.style.display = 'none'
-                    toogleNavStat = false
-                }
-            }
+let toogleNavStat = false;
+const nav = document.getElementById('responsive-nav');
+
+function toogleNav() {
+    if (!toogleNavStat) {
+        nav.classList.add('active');
+        toogleNavStat = true;
+    } else {
+        nav.classList.remove('active');
+        toogleNavStat = false;
+    }
+}

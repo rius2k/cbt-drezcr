@@ -1,7 +1,9 @@
 from flask import * #type: ignore
 from settings import *
 
-bp, app_config = Blueprint(str(os.path.basename(__file__).replace('.py', '')).capitalize(), __name__), loadAppConfig() #type:ignore
+app_title = str(os.path.basename(__file__).replace('.py', '')).capitalize()
+
+bp, app_config = Blueprint(app_title, __name__), loadAppConfig() #type:ignore
 
 @bp.route('/')
 def index():
@@ -13,5 +15,6 @@ def index():
         PageDescription=SetPageDescription(app_config["site-description"]["description"]),
         JsFX=SetJSInit(),
         PageHeader=SetPageHeader(),
-        PageFooter=SetPageFooter()
+        PageFooter=SetPageFooter(),
+        PageContentTitle=SetPageContentTitle('Soles de Metepec')
     )
