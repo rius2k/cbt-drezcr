@@ -11,5 +11,6 @@ def index():
         PageTitle=SetPageTitle(f'{str(os.path.basename(__file__).replace('.py', '')).capitalize()} ~ {app_config['site-description']['after-pagetitle']}'),
         PageDescription=SetPageDescription(app_config["site-description"]["description"]),
         JsFX=SetJSInit(),
-        PageHeader=SetPageHeader()
+        PageHeader=SetPageHeader(),
+        PageFooter=SetPageFooter()
     )

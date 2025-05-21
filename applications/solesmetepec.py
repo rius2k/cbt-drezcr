@@ -12,5 +12,6 @@ def index():
         PageTitle=SetPageTitle(f'Soles de Metepec ~ {app_config['site-description']['after-pagetitle']}'),
         PageDescription=SetPageDescription(app_config["site-description"]["description"]),
         JsFX=SetJSInit(),
-        PageHeader=SetPageHeader()
+        PageHeader=SetPageHeader(),
+        PageFooter=SetPageFooter()
     )
